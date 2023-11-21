@@ -132,7 +132,7 @@ fn main(){
         wc.char_flag = true;
     }
     if matches.is_present("FILE"){
-        let file_path_vec : Vec<&str> = matches.values_of("FILE")
+        let file_path_vec : Vec<&str> = matches.values_of("FILE").unwrap().collect();
         for path in file_path_vec {
             match wc.get_stats(&String::from(path)){
                 Ok(_) => (),
