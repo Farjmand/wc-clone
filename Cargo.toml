@@ -2,7 +2,16 @@
 name = "wc-clone"
 version = "0.1.0"
 edition = "2021"
+description = "A clone of the old unix wc"
+repository = "https://github.com/palash25/wc-rs"
+readme = "README.md"
+keywords = ["wc", "unix", "tools"]
+categories = ["command-line-interface", "command-line-utilities"]
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+ansi_term = "0.12.1"
+clap = "4.4.8"
+
