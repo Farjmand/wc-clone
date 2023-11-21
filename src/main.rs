@@ -40,8 +40,8 @@ impl WcStats{
     }
 
 
-fn get_stats(&mut self, file: &str) -> Result<(), String> {
-    let filename = file.to_string();
+    fn get_stats(&mut self, file: &str) -> Result<(), String> {
+        let filename = file.to_string();
     match File::open(file){
         Ok(mut fd) => {
             let mut contents = String::new();
@@ -68,7 +68,7 @@ fn get_stats(&mut self, file: &str) -> Result<(), String> {
        }
     }
 }
-fn print_to_console(self){
+    fn print_to_console(self){
     for stat in self.stats{
         if self.line_flag {
             print!("{}\t", stat.lines)
@@ -144,6 +144,4 @@ fn main(){
     }else{
         println!("switch on stdin")
     }
-
-    Ok(())
 }

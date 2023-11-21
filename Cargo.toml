@@ -13,5 +13,5 @@ license = "MIT"
 
 [dependencies]
 ansi_term = "0.12.1"
-clap = "4.4.8"
+clap = "2.31.2"
 
